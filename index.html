@@ -180,7 +180,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-05-27 19:41:48 / 修改时间：21:59:55" itemprop="dateCreated datePublished" datetime="2023-05-27T19:41:48+08:00">2023-05-27</time>
+              <time title="创建时间：2023-05-27 19:41:48 / 修改时间：23:17:29" itemprop="dateCreated datePublished" datetime="2023-05-27T19:41:48+08:00">2023-05-27</time>
             </span>
 
           
@@ -197,8 +197,6 @@
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-
-
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -211,6 +209,114 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/05/git/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="xiaohe">
+      <meta itemprop="description" content="good good study, day day up">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="知识驿站">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/06/05/git/" class="post-title-link" itemprop="url">git</a>
+        </h2>
+
+        <div class="post-meta">
+
+        
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-06-05 00:00:00 / 修改时间：13:37:54" itemprop="dateCreated datePublished" datetime="2023-06-05T00:00:00+08:00">2023-06-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>使用git-bash 输入命令：</p>
+<p><code>git cat-file -p &lt;版本号&gt;</code> 根据版本号查看提交信息</p>
+<p><code>git -v</code>查看软件版本</p>
+<p><code>git init</code>初始化仓库</p>
+<p><code>git clone &lt;url&gt;</code>克隆远程仓库到本地</p>
+<p><code>git clone &lt;url&gt; &lt;自定义文件夹名&gt;</code>克隆远程仓库到本地并自定义名字</p>
+<p><code>git config &lt;配置名称&gt; &lt;配置值&gt;</code>git配置</p>
+<blockquote>
+<p><code>git config user.name 用户名</code> 配置 username</p>
+<p><code>git config user.email 邮箱地址</code> 配置 email</p>
+</blockquote>
+<p><code>git config --global &lt;配置名称&gt; &lt;配置值&gt;</code>git 进行全局配置</p>
+<p><code>git status</code>git 暂存区的状态</p>
+<p><code>git add &lt;文件名&gt;</code> 从工作区添加文件到暂存区</p>
+<p><code>git rm --cached &lt;文件名&gt;</code> 从暂存区将文件移回工作区</p>
+<p><code>git commit -m &quot;&lt;提交的备注消息&gt;&quot;</code> 将暂存区的文件提交到存储区</p>
+<p><code>git log</code> 查看提交历史</p>
+<blockquote>
+<p><code>git log --oneline</code> 以更简洁明了的方式显示提交历史</p>
+</blockquote>
+<p><code>git restore &lt;文件名&gt;</code> 恢复尚未提交的误删除的文件</p>
+<p><code>git reset --hard &lt;7位版本号&gt;</code> 将当前的版本库重置到之前的库</p>
+<p><code>git revert &lt;需要恢复的版本号的下一个版本号&gt;</code> 在不丢失之前提交历史的情况下，恢复到之前的版本库</p>
+<p><code>git branch &lt;分支名&gt;</code> 新增分支</p>
+<blockquote>
+<p><code>git branch -v</code> 查看有多少分支</p>
+<p><code>git branch -d &lt;分支名&gt;</code> 删除分支</p>
+</blockquote>
+<p><code>git checkout &lt;分支名&gt;</code> 切换分支</p>
+<blockquote>
+<p><code>git checkout -b &lt;分支名&gt;</code> 创建分支并切换过去</p>
+</blockquote>
+<p><code>git merge &lt;分支名&gt;</code> 合并分支</p>
+<p>    若有冲突，需要解决冲突。</p>
+<p><code>git tag</code> 查看当前的标签</p>
+<blockquote>
+<p><code>git tag &lt;标签名&gt; &lt;版本号&gt;</code> 为提交记录添加tag</p>
+<p><code>git log &lt;标签名&gt;</code> 通过标签名查看提交历史</p>
+<p><code>git checkout -b &lt;标签名&gt;</code> 以当前标签的提交创建一个分支</p>
+</blockquote>
+<p><code>git remote add &lt;origin&gt; &lt;ssh地址&gt;</code> 添加名为origin的远程地址</p>
+<blockquote>
+<p><code>git remote remove &lt;origin&gt;</code> 删除远程地址</p>
+<p><code>git remote rename &lt;origin&gt;</code> 修改名称</p>
+<p><code>git remote -v</code> 查看远端分支</p>
+</blockquote>
+<p><code>git push &lt;origin&gt;</code> 推送到名为origin的远程仓库</p>
+<p><code>git pull &lt;origin&gt;</code> 拉取名为origin的远程仓库</p>
 
       
     </div>
@@ -294,9 +400,13 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -331,7 +441,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共79字</span>
+  <span class="post-count">博客全站共643字</span>
 </div>
 
 
